@@ -8,3 +8,7 @@ SELECT *
 FROM bookings 
 WHERE total_amount >= 1000000;
 
+-- Ejercicio 3: Todos los aviones disponibles
+
+SELECT *
+FROM airplanes_data
