@@ -20,3 +20,9 @@ SELECT f.flight_id, r.route_no, r.airplane_code
 FROM flights f
 JOIN routes r ON f.route_no = r.route_no
 WHERE r.airplane_code = '789';
+
+
+-- Ejercicio 5: Información de los tickets comprados por pasajeros llamados Irina
+SELECT * 
+FROM tickets 
+WHERE passenger_name LIKE 'IRINA%';
