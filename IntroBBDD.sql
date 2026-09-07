@@ -12,3 +12,11 @@ WHERE total_amount >= 1000000;
 
 SELECT *
 FROM airplanes_data
+
+-- Ejercicio 4: Vuelos realizados con el Boeing 737 ('733')
+-- Nota: En esta versión de la base de datosel 'airplane_code'
+--  está en la tabla 'routes' y requiere un JOIN con 'flights'.
+SELECT f.flight_id, r.route_no, r.airplane_code 
+FROM flights f
+JOIN routes r ON f.route_no = r.route_no
+WHERE r.airplane_code = '789';
